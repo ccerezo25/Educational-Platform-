@@ -1,0 +1,175 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: cambioFondo 20s infinite;
+}
+
+.fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+    z-index: 1;
+}
+
+@keyframes cambioFondo {
+    0% {
+        background-image: url('Imagenes/fondo3.png');
+    }
+    33.33% {
+        background-image: url('Imagenes/fondo4.png');
+    }
+    66.66% {
+        background-image: url('Imagenes/fondo5.png');
+    }
+    100% {
+        background-image: url('Imagenes/fondo3.png');
+    }
+}
+
+.contenido {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    position: absolute;
+    top: 25px; /* Ajusta la posición vertical aquí */
+    left: 10%; /* Ajusta la posición horizontal aquí */
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 235px; /* Ajusta el tamaño de la imagen aquí */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.custom-container {
+    position: absolute;
+    top: 120px; /* Ajusta la posición vertical aquí */
+    left: 55%; /* Ajusta la posición horizontal aquí */
+    transform: translateX(-50%);
+    max-width: 600px; /* Ajusta el ancho según sea necesario */
+}
+
+.card-custom {
+    background-color: rgba(255, 255, 255, 0.72); /* Fondo blanco con transparencia */
+    border: none; /* Sin borde */
+    border-radius: 35px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra leve */
+    padding: 20px; /* Espaciado interno */
+    width: 400px; /* Ancho ajustable */
+    height: 500px; /* Altura ajustable */
+}
+
+.card-header-custom {
+    color: black; /* Color del texto del encabezado */
+    background-color: transparent; /* Fondo transparente para el encabezado */
+    text-align: center;
+    font-weight: bold; /* Negrita */
+}
+
+.welcome-text {
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 200 !important;
+    color: #1a263e;
+    font-size: 28px;
+}
+
+.title-text {
+    text-align: center;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800 !important;
+    color: #1a263e;
+    font-size: 35px;
+    line-height: 20px;
+}
+
+.btn-custom {
+    background-color: #ded000; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    position: absolute;
+    top: 375px; /* Ajusta la posición vertical aquí */
+    left: 48%; /* Ajusta la posición horizontal aquí */
+    transform: translateX(-50%);
+}
+
+.btn-custom:hover {
+    background-color: #c9bb02; /* Color del botón al pasar el mouse */
+    color: white;
+}
+
+
+/* Media  Responsividad */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    .custom-container {
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 90%;
+    }
+
+    .card-custom {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .btn-custom {
+        top: auto;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        width: 80%;
+        padding: 10px;
+        position: relative;
+    }
+
+    .welcome-text, .title-text {
+        font-size: 24px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (móviles) */
+@media (max-width: 480px) {
+    .custom-container {
+        top: 80px;
+        max-width: 100%;
+    }
+
+    .card-custom {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .btn-custom {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .welcome-text {
+        font-size: 20px;
+    }
+
+    .title-text {
+        font-size: 28px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+}

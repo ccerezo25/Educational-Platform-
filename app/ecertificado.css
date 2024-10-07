@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color:#DBE9D6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 130px auto; /* Añade un margen superior de 60px para separar el contenido de la cabecera */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para los elementos dentro del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card {
+    background-color: #f8f9fa; /* Fondo claro para las tarjetas */
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #ded000; /* Amarillo para el encabezado de las tarjetas */
+    color: #144600; /* Verde oscuro para el texto del encabezado */
+    padding: 10px;
+    border-bottom: 1px solid #dedede;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dedede;
+}
+
+.table th {
+    background-color: #ded000; /* Amarillo para el encabezado de las tablas */
+    color: #144600; /* Verde oscuro para el texto del encabezado */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Color de fondo para las filas impares */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #fff; /* Color de fondo para las filas pares */
+}
+
+.btn-warning {
+    background-color: #ded000; /* Botones de advertencia en amarillo */
+    color: #144600; /* Texto verde oscuro */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #c9bb02; /* Cambio de color en hover */
+    color: white;
+}
+
+.alert {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}

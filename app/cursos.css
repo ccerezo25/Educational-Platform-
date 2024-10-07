@@ -1,0 +1,155 @@
+/* Estilos para el fondo de la página */
+body {
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 143, 48, 0.2); /* Ajusta la opacidad aquí */
+    backdrop-filter: blur(5px); /* Ajusta el blur aquí */
+    z-index: -1; /* Asegura que la capa de blur esté detrás del contenido */
+}
+
+/* Estilos para el contenedor principal */
+.row {
+    margin-top: 20px;
+}
+
+/* Estilos para la tarjeta */
+.card {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.836); /* Ajusta la opacidad aquí */
+}
+
+/* Estilos para el encabezado de la tarjeta */
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: rgb(20, 70, 0);
+}
+
+/* Estilos para el cuerpo de la tarjeta */
+.card-body {
+    padding: 20px;
+}
+
+/* Estilos para las etiquetas */
+.form-label {
+    font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Margen inferior para los campos de entrada */
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+/* Estilos para los botones */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Alineación de los botones al final */
+.d-flex.justify-content-end {
+    margin-top: 20px;
+}
+
+/* Estilos para la tabla */
+.table-striped {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.table-striped th, .table-striped td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-striped th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table-striped tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Media Queries para Responsividad */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .card-header {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    
+    .card-body {
+        padding: 15px;
+    }
+    
+    .form-control {
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+    
+    .table-striped th, .table-striped td {
+        padding: 15px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (móviles) */
+@media (max-width: 480px) {
+    .card {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    .card-header {
+        font-size: 0.875rem;
+        padding: 8px 10px;
+    }
+    
+    .card-body {
+        padding: 10px;
+    }
+    
+    .form-control {
+        font-size: 0.75rem;
+        padding: 6px;
+    }
+    
+    .table-striped th, .table-striped td {
+        padding: 10px;
+    }
+}
+

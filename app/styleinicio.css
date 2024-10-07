@@ -1,0 +1,68 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fondo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: cambioFondo 20s infinite;
+}
+
+.fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+    z-index: 1;
+}
+
+@keyframes cambioFondo {
+    0% {
+        background-image: url('Imagenes/fondo3.png');
+    }
+    33.33% {
+        background-image: url('Imagenes/fondo4.png');
+    }
+    66.66% {
+        background-image: url('Imagenes/fondo5.png');
+    }
+    100% {
+        background-image: url('Imagenes/fondo3.png');
+    }
+}
+
+.contenido {
+    position: relative;
+    z-index: 2;
+}
+
+/* Media Queries para Responsividad */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    .fondo {
+        height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
+    }
+    
+    .contenido {
+        padding: 10px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (móviles) */
+@media (max-width: 480px) {
+    .fondo {
+        height: 70vh; /* Ajusta la altura para pantallas más pequeñas */
+    }
+    
+    .contenido {
+        padding: 5px;
+    }
+}

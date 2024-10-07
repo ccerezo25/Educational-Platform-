@@ -1,0 +1,85 @@
+/* Estilos generales del pie de página */
+.footer {
+    background-color: #deb600;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para Responsividad */
+
+/* Estilos para dispositivos con un ancho máximo de 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer-links li {
+        margin: 0 5px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 480px (móviles) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    .footer-links {
+        margin-top: 5px;
+    }
+
+    .footer-links li {
+        margin: 0 3px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+}
