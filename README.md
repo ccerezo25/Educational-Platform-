@@ -1,4 +1,4 @@
-<h3>Hi there! You can check out the completed project in the 'Project Screenshots' folder, where you'll find various captures of the project. Thanks for taking a look!</h3>
+<h3>Hi there! You can check out the completed project in the 'Project Screenshots' folder, where you'll find various captures of the project. The project is also responsive, ensuring it looks great on all devices. Thanks for taking a look!</h3>
 <br>
 <h4>Index</h4>
 <center>
